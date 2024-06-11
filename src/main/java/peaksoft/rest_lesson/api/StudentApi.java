@@ -2,11 +2,12 @@ package peaksoft.rest_lesson.api;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import peaksoft.rest_lesson.dto.SimpleResponse;
-import peaksoft.rest_lesson.dto.StudentRequest;
-import peaksoft.rest_lesson.dto.StudentResponse;
+import peaksoft.rest_lesson.dto.studentDto.SimpleResponse;
+import peaksoft.rest_lesson.dto.studentDto.StudentRequest;
+import peaksoft.rest_lesson.dto.studentDto.StudentResponse;
 import peaksoft.rest_lesson.entity.Student;
 import peaksoft.rest_lesson.service.StudentService;
+
 import java.util.List;
 
 @RestController

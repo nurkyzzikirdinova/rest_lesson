@@ -27,4 +27,6 @@ public class Student {
     private LocalDate createdDate;
     private LocalDate graduationDate;
     private boolean isBlocked;
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH, CascadeType.REMOVE, CascadeType.DETACH})
+    private Group group;
 }

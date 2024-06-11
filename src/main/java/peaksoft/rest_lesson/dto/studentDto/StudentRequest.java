@@ -1,4 +1,4 @@
-package peaksoft.rest_lesson.dto;
+package peaksoft.rest_lesson.dto.studentDto;
 import lombok.Getter;
 import lombok.Setter;
 
