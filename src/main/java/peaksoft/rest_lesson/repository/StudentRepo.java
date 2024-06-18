@@ -9,24 +9,23 @@ import java.util.Optional;
 
 @Repository
 public interface StudentRepo extends JpaRepository<Student, Long> {
-    @Query ("select new peaksoft.rest_lesson.dto.studentDto.StudentResponse(" +
-            "s.id," +
-            "concat(s.firstName,' ',s.lastName) ,"+
-            "s.email, " +
-            " s.createdDate, " +
-            "s.graduationDate," +
-            "s.isBlocked)  from Student s")
-    List<StudentResponse> findAllStudents();
+//    @Query ("select new peaksoft.rest_lesson.dto.studentDto.StudentResponse(" +
+//            "s.id," +
+//            "concat(s.firstName,' ',s.lastName) ,"+
+//            "s.email, " +
+//            " s.createdDate, " +
+//            "s.graduationDate," +
+//            "s.isBlocked)  from Student s")
+//    List<StudentResponse> findAllStudents();
+//    Student getStudentByEmail(String email);
+//    @Query ("select new peaksoft.rest_lesson.dto.studentDto.StudentResponse(" +
+//            "s.id," +
+//            "concat(s.firstName,' ',s.lastName) ,"+
+//            "s.email, " +
+//            " s.createdDate, " +
+//            "s.graduationDate," +
+//            "s.isBlocked)  from Student s where  s.id=:id")
+//    Optional<StudentResponse> getStudentById(Long id);
 
-    Student getStudentByEmail(String email);
 
-
-    @Query ("select new peaksoft.rest_lesson.dto.studentDto.StudentResponse(" +
-            "s.id," +
-            "concat(s.firstName,' ',s.lastName) ,"+
-            "s.email, " +
-            " s.createdDate, " +
-            "s.graduationDate," +
-            "s.isBlocked)  from Student s where  s.id=:id")
-    Optional<StudentResponse> getStudentById(Long id);
 }
